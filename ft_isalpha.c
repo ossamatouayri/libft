@@ -6,7 +6,7 @@
 /*   By: ostouayr <ostouayr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 21:53:08 by ostouayr          #+#    #+#             */
-/*   Updated: 2024/10/22 09:41:26 by ostouayr         ###   ########.fr       */
+/*   Updated: 2024/10/22 09:48:34 by ostouayr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,4 @@ int	ft_isalpha(int c)
 	}
 	else
 		return (0);
-}
-int main(){
-	char c = 'a';
-	int count = ft_isalpha(c);
-	printf("%d\n",count);
 }
