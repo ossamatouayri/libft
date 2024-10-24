@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 18:36:20 by ostouayr          #+#    #+#             */
-/*   Updated: 2024/10/24 01:24:53 by marvin           ###   ########.fr       */
+/*   Updated: 2024/10/24 01:30:10 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ void *ft_memmove(void *dest, const void *src, size_t n)
 	size_t	i;
 	size_t	j;
 
-	if (!src || !dest)
-		return(NULL);
 	i = 0;
 	j = ft_strlen(dest);
 	if(dest > src)
