@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ostouayr <ostouayr@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 18:36:20 by ostouayr          #+#    #+#             */
-/*   Updated: 2024/10/23 22:43:54 by ostouayr         ###   ########.fr       */
+/*   Updated: 2024/10/24 01:24:53 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,19 +21,20 @@ void *ft_memmove(void *dest, const void *src, size_t n)
 		return(NULL);
 	i = 0;
 	j = ft_strlen(dest);
-	while (i < n)
+	if(dest > src)
 	{
-		((unsigned char *)dest)[j] = ((unsigned char *)src)[i];
-		j--;
-		i++;
+		while(n--)
+		{
+			((unsigned char *)dest)[n] = ((unsigned char *)src)[n];
+		}
 	}
-	((unsigned char *)dest)[i] = '\0';
+	else
+	{
+		while(i < n)
+		{
+			((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
+			i++;
+		}
+	}
 	return(dest);
-}
-
-int main(){
-	char str[] = "abcde";
-	ft_memmove(str + 2, str , 3);
-	printf("value is : %s\n",str);
-
 }
