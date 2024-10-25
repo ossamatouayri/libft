@@ -1,38 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ostouayr <ostouayr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/23 18:36:20 by ostouayr          #+#    #+#             */
-/*   Updated: 2024/10/25 18:43:22 by ostouayr         ###   ########.fr       */
+/*   Created: 2024/10/25 12:35:10 by ostouayr          #+#    #+#             */
+/*   Updated: 2024/10/25 12:44:18 by ostouayr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+int	ft_tolower(int c)
 {
-	size_t	i;
-	size_t	j;
-
-	i = 0;
-	j = ft_strlen(dest);
-	if (dest > src)
+	if (c >= 'A' && c <= 'Z')
 	{
-		while (n--)
-		{
-			((unsigned char *)dest)[n] = ((unsigned char *)src)[n];
-		}
+		return (c + 32);
 	}
 	else
-	{
-		while (i < n)
-		{
-			((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
-			i++;
-		}
-	}
-	return (dest);
+		return (c);
 }
