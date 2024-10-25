@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ostouayr <ostouayr@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 11:49:05 by ostouayr          #+#    #+#             */
-/*   Updated: 2024/10/24 21:09:45 by ostouayr         ###   ########.fr       */
+/*   Updated: 2024/10/25 01:29:29 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,5 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 		((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
 		i++;
 	}
-	((unsigned char *)dest)[i] = '\0';
 	return (dest);
 }
