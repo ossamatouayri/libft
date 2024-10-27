@@ -6,7 +6,7 @@
 /*   By: ostouayr <ostouayr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 12:11:23 by ostouayr          #+#    #+#             */
-/*   Updated: 2024/10/27 14:22:21 by ostouayr         ###   ########.fr       */
+/*   Updated: 2024/10/27 14:58:01 by ostouayr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@ char	*ft_strdup(const char *s1)
 
 	i = 0;
 	all_bytes = ft_strlen(s1);
-	dup = (char *) malloc(all_bytes + 1);
+	dup = (char *) malloc(all_bytes * sizeof(char) + 1);
 	if (!dup)
 		return (NULL);
-	while (s1[i])
+	while (i < all_bytes)
 	{
 		dup[i] = s1[i];
 		i++;
