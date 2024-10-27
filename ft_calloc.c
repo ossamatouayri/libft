@@ -12,30 +12,15 @@
 
 #include "libft.h"
 
-void *ft_calloc(size_t nmemb, size_t size)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
 	size_t	all_bytes;
-	void *ptr;
+	void	*ptr;
 
 	all_bytes = nmemb * size;
-	ptr  = malloc(all_bytes);
-	if(!ptr)
-		return(NULL);
-	ft_bzero(ptr,all_bytes);
-	return(ptr);
-}
-int main()
-{
-	char *str = ft_calloc(4,1);
-	if(!str)
-	{
-		printf("la makhadamach");
-	}else
-	{
-		str[0] = 'R';
-		str[1] = 'C';
-		str[2] = 'A';
-		str[3] = 'h';
-		printf("%s\n",str);
-	}
+	ptr = malloc(all_bytes);
+	if (!ptr)
+		return (NULL);
+	ft_bzero (ptr, all_bytes);
+	return (ptr);
 }
