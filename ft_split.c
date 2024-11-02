@@ -14,10 +14,8 @@
 
 static size_t	count_words(char *s, char c)
 {
-	size_t	i;
 	size_t	count;
 
-	i = 0;
 	count = 0;
 	while (*s)
 	{
