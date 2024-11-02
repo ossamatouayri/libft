@@ -27,20 +27,19 @@ NAME = libft.a
 all: $(NAME)
 
 bonus: $(OBJBF)
-	@ar rcs $(NAME) $(OBJBF)
+	ar rcs $(NAME) $(OBJBF)
 
 $(NAME): $(OBJF)
-	@ar rcs $(NAME) $(OBJF)
-
-%.o:%.c
-	@$(CC) $(CFLAGS) -c $< -o $@
+	ar rcs $(NAME) $(OBJF)
 
 clean:
-	@$(RM) $(OBJBF) $(OBJF)
+	$(RM) $(OBJBF) $(OBJF)
 
 fclean: clean
-	@$(RM) $(NAME)
+	$(RM) $(NAME)
 
 re: fclean all
 
 .PHONY: all bonus clean fclean re
+
+.SECONDARY: $(OBJBF) $(OBJF)

@@ -29,7 +29,7 @@ static size_t	count_words(char *s, char c)
 	return (count);
 }
 
-static int	lento_sep(char *s, char c)
+static size_t	lento_sep(char *s, char c)
 {
 	size_t	i;
 
@@ -61,11 +61,8 @@ static char	*copy_words(char *s, char c)
 
 static void	free_strings(char **strings, size_t i)
 {
-	size_t	j;
-
-	j = 0;
-	while (j < i)
-		free(strings[j]);
+	while (i > 0)
+		free(strings[--i]);
 	free(strings);
 }
 
@@ -77,9 +74,11 @@ char	**ft_split(char const *s, char c)
 
 	i = 0;
 	word_len = count_words((char *)s, c);
+	if (!s)
+		return (NULL);
 	strings = (char **) malloc((word_len + 1) * sizeof(char *));
 	if (!strings)
-		return (strings);
+		return (NULL);
 	while (i < word_len)
 	{
 		while (*s && *s == c)
@@ -94,6 +93,12 @@ char	**ft_split(char const *s, char c)
 		while (*s && *s != c)
 			s++;
 	}
-	strings[i] = NULL;
-	return (strings);
+	return (strings[i] = NULL, strings);
+}
+int main()
+{
+	char *s = "test test test";
+	char **s1 = ft_split(s, ' ');
+	printf("%s\n", s1[3]);
+
 }
