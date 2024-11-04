@@ -6,7 +6,7 @@
 /*   By: ostouayr <ostouayr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 18:48:06 by ostouayr          #+#    #+#             */
-/*   Updated: 2024/11/01 18:55:07 by ostouayr         ###   ########.fr       */
+/*   Updated: 2024/11/03 21:31:41 by ostouayr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,11 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
+	if (!lst || !f)
+		return ;
 	while (lst)
 	{
 		f(lst->content);
-		lst = lst->content;
+		lst = lst->next;
 	}
 }
