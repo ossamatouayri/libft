@@ -6,7 +6,7 @@
 /*   By: ostouayr <ostouayr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 19:01:32 by ostouayr          #+#    #+#             */
-/*   Updated: 2024/11/02 14:29:53 by ostouayr         ###   ########.fr       */
+/*   Updated: 2024/11/04 18:54:05 by ostouayr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	void	*new_content;
 	t_list	*new_node;
 
-	if (!lst)
+	if (!lst || !f || !del)
 		return (NULL);
 	new_list = NULL;
 	new_node = NULL;
