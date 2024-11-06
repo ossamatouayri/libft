@@ -18,7 +18,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char	*new_string;
 	size_t	size;
 
-	if (!s)
+	if (!s || !f)
 		return (NULL);
 	i = 0;
 	size = ft_strlen(s);

@@ -32,6 +32,9 @@ bonus: $(OBJBF)
 $(NAME): $(OBJF)
 	ar rcs $(NAME) $(OBJF)
 
+%.o:%.c libft.h
+	$(CC) $(CFLAGS) -c $< -o $@
+
 clean:
 	$(RM) $(OBJBF) $(OBJF)
 

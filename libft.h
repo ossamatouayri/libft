@@ -6,16 +6,14 @@
 /*   By: ostouayr <ostouayr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 09:31:44 by ostouayr          #+#    #+#             */
-/*   Updated: 2024/11/02 16:20:09 by ostouayr         ###   ########.fr       */
+/*   Updated: 2024/11/06 11:49:06 by ostouayr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stdio.h>
 # include <stdlib.h>
-# include <string.h>
 # include <unistd.h>
 
 typedef struct s_list
