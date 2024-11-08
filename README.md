@@ -42,3 +42,17 @@ Libft includes 34 essential functions covering character, string, and memory man
   `ft_atoi`, `ft_itoa`
 ### ● File Descriptor Writing
  `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd`
+## Bonus Functions
+The 9 bonus functions, focused on list manipulation, add up to 25 additional points, bringing the project score to 125 if all functions are implemented accurately.
+
+`ft_lstnew`, `ft_lstadd_front`, `ft_lstsize`, `ft_lstlast`, `ft_lstadd_back`, `ft_lstdelone`, `ft_lstclear`, `ft_lstiter`, `ft_lstmap`
+## Norminette
+### At 42, each project must follow the Norm standard:
+
+##### ● No for, do...while, switch, case, goto, ternary operators, or variable-length arrays.
+##### ● Functions are limited to 25 lines (excluding braces).
+##### ● Lines should be a maximum of 80 columns, including comments.
+##### ● Functions may take a maximum of 4 named parameters.
+##### ● Assignments and declarations cannot be in the same line (except static variables).
+##### ● No more than 5 variables per function.
+##### ● And more...
