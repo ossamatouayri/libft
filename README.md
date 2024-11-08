@@ -10,7 +10,7 @@ For 42 students: tackling this project on your own is highly recommended. Writin
 
 **1** **.** Clone the repository:
 ```bash
-git clone git@github.com:MarouanDoulahiane/libft.git
+git clone git@github.com:ossamatouayri/libft.git
 ```
 **2** **.** Enter the project directory and run make:
 ```bash
@@ -28,7 +28,7 @@ make
 * **make clean** - Remove all object (.o) files.
 * **make fclean** - Remove all object files and the compiled library (.a).
 * **make re** - Execute fclean and then all.
- 
+
 ## Mandatory Functions
 Libft includes 34 essential functions covering character, string, and memory manipulation, which are required for a grade of 100.
 
