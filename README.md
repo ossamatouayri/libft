@@ -32,13 +32,13 @@ make
 ## Mandatory Functions
 Libft includes 34 essential functions covering character, string, and memory manipulation, which are required for a grade of 100.
 
-### Character Check and Manipulation
-● `ft_isalpha`, `ft_isdigit`, `ft_isalnum`, `ft_isascii`, `ft_toupper`, `ft_tolower`
-### String Manipulation
-●  `ft_strlen`, `ft_strlcpy`, `ft_strlcat`, `ft_strchr`, `ft_strrchr`, `ft_strncmp`, `ft_strnstr`, `ft_substr`, `ft_strjoin`, `ft_strtrim`, `ft_split`, `ft_strmapi`, `ft_striteri`
-### Memory Manipulation
-● `ft_calloc`, `ft_memset`, `ft_bzero`, `ft_memcpy`, `ft_memmove`, `ft_memchr`, `ft_memcmp`, `ft_strdup`
-### Numeric Manipulation
-●  `ft_atoi`, `ft_itoa`
-### File Descriptor Writing
-● `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd`
+### ● Character Check and Manipulation
+ `ft_isalpha`, `ft_isdigit`, `ft_isalnum`, `ft_isascii`, `ft_toupper`, `ft_tolower`
+### ● String Manipulation
+  `ft_strlen`, `ft_strlcpy`, `ft_strlcat`, `ft_strchr`, `ft_strrchr`, `ft_strncmp`, `ft_strnstr`, `ft_substr`, `ft_strjoin`, `ft_strtrim`, `ft_split`, `ft_strmapi`, `ft_striteri`
+### ● Memory Manipulation
+ `ft_calloc`, `ft_memset`, `ft_bzero`, `ft_memcpy`, `ft_memmove`, `ft_memchr`, `ft_memcmp`, `ft_strdup`
+### ● Numeric Manipulation
+  `ft_atoi`, `ft_itoa`
+### ● File Descriptor Writing
+ `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd`
